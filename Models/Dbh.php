@@ -11,11 +11,8 @@ class Dbh
 
     protected function connect()
     {
-        //mysql://dbd9ef0oiu25cnl9:ipog8cn70chqmr3v@lmag6s0zwmcswp5w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/nj74jfxx8v5evsb1
-        // mysql://root:@localhost/phppilot
-        //mysql://t6eo2w0hk79fag97:vnnv87wcawx23vo7@cvktne7b4wbj4ks1.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/xnlhdx284fk8j3jo
-        // mysql://4481384_savi:onelast73@fdb1034.awardspace.net/4481384_savi
-        $jawsdb_url = parse_url("mysql://t6eo2w0hk79fag97:vnnv87wcawx23vo7@cvktne7b4wbj4ks1.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/xnlhdx284fk8j3jo");
+
+        $jawsdb_url = parse_url("mysql://username:password@host:port/database");
         $jawsdb_server = $jawsdb_url["host"];
         $jawsdb_username = $jawsdb_url["user"];
         $jawsdb_password = $jawsdb_url["pass"];
