@@ -1,49 +1,52 @@
-# parkside-gateways-reservations-system
+# Parkside Gateways Reservations System
 
-- Reservation System for Circuit Bungalows and Campsites near National Parks
-This reservation system is designed to streamline the booking process for Circuit Bungalows and Campsites located near National Parks. 
+Reservation System for Circuit Bungalows and Campsites near National Parks. This reservation system is designed to streamline the booking process for Circuit Bungalows and Campsites located near National Parks.
 
-## Features:
+## Features
 
-### User Authentication:
+### User Authentication
 - Users can sign up for an account or log in using their credentials.
--- Only logged in uses are given access to all features.
-  
-### Reservation Management:
+- Only logged-in users are given access to all features.
+
+### Reservation Management
 - Users can view available Circuit Bungalows and Campsites of a selected Park.
 - They can make reservations for specific dates and locations.
 - The system provides confirmation and booking details upon successful reservation.
 
-Dashboard:
-Users have access to a dashboard displaying their reservation history.
-The dashboard provides an overview of past and upcoming reservations.
+### Dashboard
+- Users have access to a dashboard displaying their reservation history.
+- The dashboard provides an overview of past and upcoming reservations.
 
-## Technologies Used:
+## Technologies Used
 
-Frontend: HTML, CSS, JavaScript
-Backend: PHP
-Database: MySQL
+- Frontend: HTML, CSS, JavaScript
+- Backend: PHP
+- Database: MySQL
 
-## Setup Instructions:
+## Setup Instructions
 
-Clone the repository to your local machine.
-Install dependencies using npm install.
-Set up MongoDB database and configure connection settings in the .env file.
-Run the application using npm start.
-Access the application via the provided URL.
+1. Clone the repository to your local machine.
+2. Install dependencies using npm install.
+3. Set up MongoDB database and configure connection settings in the .env file.
+4. Run the application using npm start.
+5. Access the application via the provided URL.
 
-## File Structure:
+## File Structure
 
-app.js: Main entry point of the application.
-routes/: Contains route handlers for different endpoints (e.g., authentication, reservations).
-models/: Defines data models for users, reservations, and other entities.
-controllers/: Contains logic for handling various requests.
-views/: Frontend views for user interface components.
-public/: Static assets such as images, stylesheets, and client-side JavaScript files.
-config/: Configuration files for database connection, authentication strategies, etc.
-Contributing:
+- `app.js`: Main entry point of the application.
+- `routes/`: Contains route handlers for different endpoints (e.g., authentication, reservations).
+- `models/`: Defines data models for users, reservations, and other entities.
+- `controllers/`: Contains logic for handling various requests.
+- `views/`: Frontend views for user interface components.
+- `public/`: Static assets such as images, stylesheets, and client-side JavaScript files.
+- `config/`: Configuration files for database connection, authentication strategies, etc.
 
-Acknowledgments:
+## Contributing
+
+- Contributions are welcome! Please submit pull requests for any enhancements or bug fixes.
+- For major changes, open an issue first to discuss potential modifications.
+
+## Acknowledgments
 
 [List any acknowledgments or references here]
-A full-fledged website for making and managing reservations. Based on a pure PHP backend with no frameworks and minimal dependecies.
+A full-fledged website for making and managing reservations. Based on a pure PHP backend with no frameworks and minimal dependencies.
