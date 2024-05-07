@@ -21,7 +21,7 @@ class ReservationModel extends Dbh
     {
         error_log("Resercation.php: Fetching Reservations to view " . PHP_EOL, 3, "D:/xampp/php/logs/php_error.txt");
         try {
-            $query = "SELECT id, site_name, check_in_date, check_out_date, park, cur_date FROM reservations WHERE username = :username";
+            $query = "SELECT id, site_name, check_in_date, check_out_date, park FROM reservations WHERE username = :username";
             $stmt = $this->connect()->prepare($query);
             $stmt->bindParam(":username", $username);
             $stmt->execute();
