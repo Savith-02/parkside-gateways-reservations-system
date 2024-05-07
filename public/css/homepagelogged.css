@@ -81,3 +81,68 @@
   margin-right: 20px; /* Margin between grid items */
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.227);
 }
+@media only screen and (min-width: 1200px) {
+  :root {
+    /* Reduce font size for large screens */
+    font-size: 18px;
+  }
+}
+
+/* Media query for small screens (max-width: 767px) */
+@media only screen and (max-width: 1000px) {
+  :root {
+    /* Reduce font size for small screens */
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #top {
+    padding: 0% 1rem;
+    padding-top: 1.5rem;
+  }
+  #bottom {
+    padding: 1rem;
+  }
+  #carouselExample {
+    width: calc(80vw);
+  }
+  #content {
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    padding-bottom: 2rem;
+    padding-bottom: 4rem;
+  }
+  #left-pane {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    box-shadow: none;
+  }
+  #button-holder {
+    height: auto;
+  }
+  .button-type {
+    width: 70vw;
+    margin-bottom: 1rem;
+    grid-template-columns: 5fr 2fr;
+    padding: 1rem 1rem;
+  }
+  #right-pane {
+    order: -1;
+  }
+  .grid-container-wrapper {
+    height: calc(40vh - 3rem);
+    padding: 1rem 1rem;
+
+    /* max-width: 90vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: column; */
+  }
+  .grid-item {
+    width: 80%;
+    /* min-height: 40vh;
+    margin-bottom: 2rem;
+    margin-right: 0; */
+  }
+}
