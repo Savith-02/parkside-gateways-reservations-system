@@ -42,16 +42,6 @@ No framework was used in building this project.
 4. **Access the Site:**
    - Once the files are deployed, open a web browser and navigate to the URL where you deployed the application.
    - If everything is set up correctly, you should see the homepage of the site.
-   - 
-## File Structure
-
-- `app.js`: Main entry point of the application.
-- `routes/`: Contains route handlers for different endpoints (e.g., authentication, reservations).
-- `models/`: Defines data models for users, reservations, and other entities.
-- `controllers/`: Contains logic for handling various requests.
-- `views/`: Frontend views for user interface components.
-- `public/`: Static assets such as images, stylesheets, and client-side JavaScript files.
-- `config/`: Configuration files for database connection, authentication strategies, etc.
 
 ## Acknowledgments
 
