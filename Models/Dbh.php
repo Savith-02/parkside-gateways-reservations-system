@@ -12,7 +12,7 @@ class Dbh
     protected function connect()
     {
 
-        $jawsdb_url = parse_url("mysql://t6eo2w0hk79fag97:vnnv87wcawx23vo7@cvktne7b4wbj4ks1.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/xnlhdx284fk8j3jo");
+        $jawsdb_url = parse_url("mysql://username:password@host/database");
         $jawsdb_server = $jawsdb_url["host"];
         $jawsdb_username = $jawsdb_url["user"];
         $jawsdb_password = $jawsdb_url["pass"];
