@@ -1,0 +1,153 @@
+#content {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+}
+* {
+  box-sizing: border-box;
+}
+#left-pane {
+  box-shadow: 1px 0px 5px rgba(47, 109, 229, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.button-type {
+  margin-bottom: 2rem;
+}
+#button-holder {
+  /* height: 40%;
+  max-height: 15rem; */
+
+  min-width: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#right-pane {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b2cbfe84;
+}
+#top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 3rem;
+  height: calc(50vh - 3rem);
+}
+#bottom {
+  width: 90%;
+  padding: 1.5rem;
+  height: 100%;
+}
+#carouselExample {
+  width: calc(50vw);
+  border-radius: 20px;
+  overflow: hidden;
+}
+#carouselExample img {
+  min-height: calc(50vh - 6rem);
+  max-height: calc(50vh - 6rem);
+  min-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 auto; /* this will align the image to center. */
+  display: block;
+}
+
+.grid-container-wrapper {
+  border: 1px solid rgba(47, 109, 229, 0.4);
+  overflow-x: auto; /* Enable horizontal scrolling */
+  max-width: 100%; /* Allow container to expand */
+  height: calc(50vh - 3rem); /* Container height */
+  background-color: #ffffff; /* Container background color */
+  box-shadow: inset 0px 0px 5px rgba(47, 108, 229, 0.526);
+  padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+  scrollbar-width: thin;
+  scrollbar-color: #5e8dea #c1d2f5;
+}
+
+/* Grid container style */
+.grid-container {
+  display: flex; /* Use flexbox */
+}
+
+/* Grid item style */
+.grid-item {
+  width: 30%; /* Grid item width */
+  min-height: 100%; /* Grid item height */
+  object-fit: cover; /* Cover grid item */
+  margin-right: 20px; /* Margin between grid items */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (min-width: 1200px) {
+  :root {
+    /* Reduce font size for large screens */
+    font-size: 18px;
+  }
+}
+
+/* Media query for small screens (max-width: 767px) */
+@media only screen and (max-width: 1000px) {
+  :root {
+    /* Reduce font size for small screens */
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #top {
+    padding: 0% 1rem;
+    padding-top: 1.5rem;
+  }
+  #bottom {
+    padding: 1rem;
+  }
+  #carouselExample {
+    width: calc(80vw);
+  }
+  #content {
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    padding-bottom: 2rem;
+    padding-bottom: 4rem;
+  }
+  #left-pane {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    box-shadow: none;
+  }
+  #button-holder {
+    height: auto;
+  }
+  .button-type {
+    width: 70vw;
+    margin-bottom: 1rem;
+    grid-template-columns: 5fr 2fr;
+    padding: 1rem 1rem;
+  }
+  #right-pane {
+    order: -1;
+  }
+  .grid-container-wrapper {
+    height: calc(40vh - 3rem);
+    padding: 1rem 1rem;
+
+    /* max-width: 90vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: column; */
+  }
+  .grid-item {
+    width: 80%;
+    /* min-height: 40vh;
+    margin-bottom: 2rem;
+    margin-right: 0; */
+  }
+}
