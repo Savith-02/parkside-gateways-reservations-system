@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  width: 100vw;
+  background-color: white;
+  display: grid;
+  position: fixed;
+  top: 0;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0px 2px 5px rgba(47, 109, 229, 0.4);
+  height: 3rem;
+  z-index: 3;
+}
+#header-left {
+  background-color: var(--primary-color);
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3rem;
+  /* flex-direction: row;
+  align-items: center;
+  justify-content: center; */
+  color: white;
+  font-size: 1.3rem;
+  font-family: "Jeju Hallasan", Tahoma, sans-serif;
+}
+#brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+#flag {
+  max-width: 3.5rem;
+  height: auto;
+}
+.button {
+  display: inline-block;
+  border: 1px solid var(--primary-color);
+  padding: 0.3rem 0.7rem;
+  background-color: white;
+  color: var(--primary-color);
+  text-align: center;
+  border-radius: 30px;
+  font-weight: 700;
+  margin: 0 0.3rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.button:hover {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
+}
+.header-right-item {
+  margin: 0 calc(3% / 2);
+  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+.group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#profile {
+  background-color: var(--light-purple);
+  height: 100%;
+  padding: 0 2rem;
+}
+#profile-pic-placeholder {
+  width: auto;
+  height: 2.2rem;
+  /* margin: 0.5rem 0; */
+}
+#profile-pic {
+  margin: 0.3rem 0;
+  margin-left: 1rem;
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+}
+#triangle {
+  justify-self: flex-end;
+  position: relative;
+}
+#white-triangle {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 1.5rem solid transparent; /* Half of the desired height */
+  border-bottom: 1.5rem solid transparent; /* Half of the desired height */
+  border-right: 2rem solid white; /* Full width of the triangle */
+}
+#purple-triangle {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  width: 0;
+  height: 0;
+  border-top: 1.5rem solid transparent;
+  border-bottom: 1.5rem solid transparent;
+  border-right: 2rem solid var(--light-purple);
+  /* border-image: radial-gradient(transparent, rgba(0, 0, 0, 0.327)); */
+}
+#purple-rectangle {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1rem;
+  height: 3rem;
+  background-color: var(--light-purple);
+}
+@media only screen and (max-width: 600px) {
+  #flag {
+    max-width: 2.8rem;
+  }
+  #LKR {
+    font-size: 0.8rem;
+  }
+  #header-left {
+    font-size: 1rem;
+  }
+  .button {
+    margin: 0 0.1rem;
+    padding: 0.3rem 0.4rem;
+  }
+  #profile-pic-placeholder {
+    height: 1.8rem;
+    margin-right: 0.2rem;
+  }
+  #brand {
+    text-align: center;
+  }
+}

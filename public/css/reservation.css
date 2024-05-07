@@ -1,0 +1,180 @@
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0055ff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+.icon,
+.icon > svg {
+  height: 2rem;
+  width: 2rem;
+}
+#title {
+  font-size: 1.3rem;
+}
+#next {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+#option-holder {
+  width: 60%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.park-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.parkSelect img {
+  border: 2px solid white;
+}
+/* .parkSelect {
+  padding: 1rem;
+  border: 0.1rem rgba(75, 122, 216, 0.4) solid;
+  background-color: rgba(13, 79, 211, 0.507);
+  margin: 0 2rem;
+  color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 20px;
+} */
+.parkSelect input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+.parkSelect {
+  padding: 1rem;
+  margin: 0 2rem;
+  border-radius: 20px;
+
+  border: 0.2rem rgba(75, 122, 216, 0.4) solid;
+  color: #0055ff;
+  background-color: rgb(255, 255, 255);
+
+  transition: transform 0.3s, border 0.3s;
+}
+.parkSelect:hover {
+  transform: scale(1.03);
+  border: 0.2rem rgba(47, 108, 229, 0.61) solid;
+}
+.parkSelect:hover:not(.selected) {
+  cursor: pointer;
+  color: #0055ff;
+  border: 0.2rem rgba(47, 108, 229, 0.61) solid;
+  background-color: #ffffff;
+}
+.selected {
+  transform: scale(1.03);
+  color: #0055ff;
+  background-color: rgb(255, 255, 255);
+  border: 0.2rem rgba(47, 108, 229, 0.695) solid;
+  box-shadow: 2px 0px 5px rgba(47, 108, 229, 0.619);
+}
+.park-options label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.park-options img {
+  --img-size: 10rem;
+  width: var(--img-size);
+  height: var(--img-size);
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.park-options span {
+  font-size: 14px;
+}
+.selectable {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+
+/* .selected {
+  background-color: lightblue;
+} */
+.enlarge-on-hover {
+  transition: transform 0.3s; /* Smooth transition */
+}
+
+.enlarge-on-hover:hover {
+  transform: scale(1.1); /* Enlarge by 10% */
+}
+.disabled-hover {
+  pointer-events: none; /* Disable pointer events to prevent hover effect */
+}
+
+@media only screen and (min-width: 1200px) {
+  :root {
+    /* Reduce font size for large screens */
+    font-size: 18px;
+  }
+}
+
+/* Media query for small screens (max-width: 767px) */
+@media only screen and (max-width: 1000px) {
+  :root {
+    font-size: 14px;
+  }
+  #content {
+    padding-top: 2rem;
+  }
+  #option-holder {
+    margin-bottom: 2rem;
+  }
+  .park-options {
+    flex-direction: column;
+  }
+  .parkSelect {
+    margin-top: 2rem;
+  }
+  #content {
+    /* height: 100%; */
+    height: auto;
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    font-size: 12px;
+    /* padding-bottom: 5rem; */
+  }
+  #content {
+    padding-top: 2rem;
+    height: auto;
+    /* overflow: auto; */
+    padding-bottom: 2rem;
+    /* height: calc(100%); */
+    /* height: min-content;
+    padding-bottom: 5rem; */
+  }
+  #option-holder {
+    margin-bottom: 2rem;
+  }
+  .park-options {
+    flex-direction: column;
+  }
+  .parkSelect {
+    margin-top: 2rem;
+  }
+  .parkSelect span {
+    font-size: 11px;
+  }
+  #next {
+    bottom: 5rem;
+  }
+}

@@ -1,0 +1,55 @@
+:root {
+  --pale-purple: #abc7ff;
+}
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: var(--primary-color);
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  transition: color 0.2s; /*edited*/
+}
+.icon > svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.button-type {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  border: solid var(--primary-color) 2px;
+  margin: 0 2rem;
+  padding: 1rem 2rem;
+  width: 90%;
+  color: var(--primary-color);
+  font-weight: 400;
+  border-radius: 15px;
+  transition: background-color 0.2s, color 0.2s; /*edited*/
+}
+/*edited*/
+.button-type:hover {
+  /* background-color: var(--pale-purple);
+  color: var(--primary-color); */
+  box-shadow: 0px 1px 4px rgba(47, 109, 229, 0.7);
+}
+/* .button-type:hover > .icon {
+  color: var(--primary-color);
+}
+.button-type:hover > .icon > #pawButton {
+  fill: var(--primary-color);
+} */
+/**/
+#pawButton {
+  fill: var(--primary-color);
+  transition: color 0.2s;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.transferButton:hover {
+  box-shadow: inset 0px 0px 5px rgba(47, 109, 229, 0.7),
+    0px 2px 5px rgba(47, 109, 229, 0.7);
+}
