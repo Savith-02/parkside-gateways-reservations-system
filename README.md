@@ -4,33 +4,45 @@ Reservation System for Circuit Bungalows and Campsites near National Parks. This
 
 ## Features
 
-### User Authentication
+#### User Authentication
 - Users can sign up for an account or log in using their credentials.
 - Only logged-in users are given access to all features.
 
-### Reservation Management
+#### Reservation Management
 - Users can view available Circuit Bungalows and Campsites of a selected Park.
 - They can make reservations for specific dates and locations.
 - The system provides confirmation and booking details upon successful reservation.
 
 ### Dashboard
 - Users have access to a dashboard displaying their reservation history.
-- The dashboard provides an overview of past and upcoming reservations.
+- The functionality to browse booking options, change settings and view notifications has not been implemented.
 
 ## Technologies Used
 
-- Frontend: HTML, CSS, JavaScript
-- Backend: PHP
-- Database: MySQL
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** PHP
+- **Database:** MySQL
+
+No framework was used in building this project.
 
 ## Setup Instructions
 
-1. Clone the repository to your local machine.
-2. Install dependencies using npm install.
-3. Set up MongoDB database and configure connection settings in the .env file.
-4. Run the application using npm start.
-5. Access the application via the provided URL.
+1. **Database Configuration:**
+   - Open the `Model/Dbh.php` file in your code editor.
+   - Replace the database URL, username, password, and database name with your own database credentials.
+   - Ensure that your database server is running.
 
+2. **Database Setup:**
+   - Create the necessary tables in your database.
+     
+3. **Deploy the Application:**
+   - Upload the project files to your web server or hosting provider using FTP or any other method of your choice.
+   - Ensure that the files are placed in the appropriate directory accessible by your web server.
+
+4. **Access the Site:**
+   - Once the files are deployed, open a web browser and navigate to the URL where you deployed the application.
+   - If everything is set up correctly, you should see the homepage of the site.
+   - 
 ## File Structure
 
 - `app.js`: Main entry point of the application.
@@ -41,12 +53,8 @@ Reservation System for Circuit Bungalows and Campsites near National Parks. This
 - `public/`: Static assets such as images, stylesheets, and client-side JavaScript files.
 - `config/`: Configuration files for database connection, authentication strategies, etc.
 
-## Contributing
-
-- Contributions are welcome! Please submit pull requests for any enhancements or bug fixes.
-- For major changes, open an issue first to discuss potential modifications.
-
 ## Acknowledgments
 
-[List any acknowledgments or references here]
-A full-fledged website for making and managing reservations. Based on a pure PHP backend with no frameworks and minimal dependencies.
+This project draws its foundation from the SE Assignment for second semester, first year. The frontend designs are inspired by our collaborative efforts during that assignment. 
+Special thanks to the entire team for their contributions and support throughout the development process.
+
